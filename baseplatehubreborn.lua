@@ -1,7 +1,7 @@
-if game.PlaceId == 11111111111111111111111111 then
+if game.PlaceId == 4483381587 then
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/BaseplateHubdev/BaseplateHubReborn/main/backupmodule.lua"))()
 local UI = Material.Load({
-     Title = "Baseplate Hub Reborn",
+     Title = "Baseplate Hub Reborn Testing Site",
      Style = 1,
      SizeX = 400,
      SizeY = 500,
@@ -14,9 +14,14 @@ local Page = UI.New({
 })
 
 local test = Page.Button({
-    Text = "",
+    Text = "notification test",
     Callback = function()
-
+game.StarterGui:SetCore("SendNotification", {
+        Title = "Baseplate Hub Reborn Testing";
+        Text = "Notification Tesing (keep in mind anything here isnt an actual script)";
+        Icon = 0;
+        Duration = 7;
+ })
     end
 })
 end
@@ -299,4 +304,3 @@ if game.PlaceId == 3308615893 then
         end
     })
 end
-
